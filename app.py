@@ -20,7 +20,7 @@ with col1:
 
     if uploaded_file is not None:
         image_bytes = uploaded_file.getvalue()
-        st.image(image_bytes, caption="Gambar yang Diunggah", use_container_width=True)
+        st.image(image_bytes, caption="Gambar yang Diunggah", width='stretch')
 
 with col2:
     st.header("2. Hasil Ekstraksi")
@@ -47,12 +47,10 @@ with col2:
                                 score = option_report["score"]
                                 x, y, w, h = box
 
-                                # gambar kotak hijau di sekitar opsi(ROI)
                                 cv2.rectangle(debug_image, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                                # skor di pojok kanan bawah kotak
                                 cv2.putText(debug_image, str(score), (x + w, y + h), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
 
-                        st.image(debug_image, channels="BGR", caption="Gambar dengan Anotasi Debug", use_container_width=True)
+                        st.image(debug_image, channels="BGR", caption="Gambar dengan Anotasi Debug", width='stretch')
                         st.write("Laporan Skor Mentah:")
                         st.json(extracted_data)
 
