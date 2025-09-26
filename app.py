@@ -7,7 +7,7 @@ from config import KUESIONER_V1_BLUEPRINT
 from questract.extractor import process_image
 
 st.set_page_config(page_title="Questract Prototype", layout="wide")
-st.title("🚀 Prototipe Questract")
+st.title("Prototipe Questract")
 st.write("Unggah gambar kuesioner yang sudah diisi untuk memulai proses ekstraksi.")
 
 col1, col2 = st.columns(2)
@@ -16,7 +16,7 @@ with col1:
     st.header("1. Unggah Gambar")
     uploaded_file = st.file_uploader("Pilih file gambar (JPG atau PNG)", type=['jpg', 'png'])
 
-    debug_mode = st.checkbox("Tampilkan Mode Debug Visual")
+    debug_mode = st.checkbox("Debug Visual")
 
     if uploaded_file is not None:
         image_bytes = uploaded_file.getvalue()
@@ -34,15 +34,15 @@ with col2:
                     extracted_data = process_image(opencv_image, KUESIONER_V1_BLUEPRINT)
                     st.success("Proses ekstraksi selesai!")
 
-                    final_answers = {key: value["jawaban"] for key, value in extracted_data.items()}
+                    final_answers = {key: value["result"] for key, value in extracted_data.items()}
                     st.json(final_answers)
 
                     if debug_mode:
-                        st.subheader("🕵️ Laporan Debug Visual")
+                        st.subheader("Report Debug Visual")
                         debug_image = opencv_image.copy()
 
                         for field, data in extracted_data.items():
-                            for option_report in data["laporan_debug"]:
+                            for option_report in data["debug_report"]:
                                 box = option_report["box"]
                                 score = option_report["score"]
                                 x, y, w, h = box
