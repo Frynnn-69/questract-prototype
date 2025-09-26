@@ -8,7 +8,6 @@ needs_redraw = True
 WINDOW_NAME = "Questract Coordinate Finder - Section 1"
 
 def mouse_event_handler(event, x, y, flags, params):
-    """Menangani logika event mouse dan memperbarui state."""
     global start_point, needs_redraw, current_mouse_pos
 
     current_mouse_pos = (x, y)
@@ -46,7 +45,7 @@ if original_image is None:
 cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_NORMAL)
 cv2.setMouseCallback(WINDOW_NAME, mouse_event_handler)
 
-print("--- Questract Coordinate Finder ---")
+print("--- Questract Coordinate Finder - Section 1 ---")
 print("'r' for RESET | 'q' for EXIT.")
 print("-" * 30)
 
@@ -74,7 +73,7 @@ while True:
     if key == ord('q'):
         break
     elif key == ord('r'):
-        print("--- Reset ---")
+        print("--- Reset! ---")
         start_point = None
         defined_boxes = []
         needs_redraw = True
