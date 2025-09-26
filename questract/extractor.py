@@ -62,8 +62,8 @@ def process_image(image, blueprint):
                     best_option_label = option["label"]
 
             results[field_name] = {
-                "jawaban": best_option_label,
-                "laporan_debug": all_options_scores
+                "result": best_option_label,
+                "debug_report": all_options_scores
             }
 
     return results
