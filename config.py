@@ -4,7 +4,7 @@
 # x = jarak dari kiri, y = jarak dari atas
 
 KUESIONER_V1_BLUEPRINT = {
-    "nama": "Kuesioner Sikap Kontrasepsi V1",
+    "nama": "Kuesioner Sikap Kontrasepsi",
     # 1. Karakteristik Responden
     "fields": [
         {
@@ -133,6 +133,28 @@ KUESIONER_V1_BLUEPRINT = {
                 {"label": "3", "box": (2926, 3535, 75, 175)},
                 {"label": "4", "box": (3016, 3536, 75, 175)},
                 {"label": "5", "box": (3109, 3526, 75, 175)},
+            ]
+        },
+        {
+            "nama": "pernyataan_7",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2737, 3708, 75, 175)},
+                {"label": "2", "box": (2844, 3706, 75, 175)},
+                {"label": "3", "box": (2927, 3717, 75, 175)},
+                {"label": "4", "box": (3023, 3710, 75, 175)},
+                {"label": "5", "box": (3123, 3711, 75, 175)},
+            ]
+        },
+        # 8, 9, 10 - 15 it's same
+
+        # Confirm Interview
+        {
+            "nama": "confirm_interview",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "Ya", "box": (4024, 1395, 30, 30)},
+                {"label": "Tidak", "box": (4202, 1392, 30, 30)}
             ]
         },
 
