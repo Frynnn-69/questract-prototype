@@ -1,6 +1,6 @@
 # Blueprint Template Base for Questionnaire Form
 
-# Format koordinat(x, y, lebar, tinggi)
+# Format koordinat(x, y, w, h)
 # x = jarak dari kiri, y = jarak dari atas
 
 KUESIONER_V1_BLUEPRINT = {
@@ -67,17 +67,74 @@ KUESIONER_V1_BLUEPRINT = {
         },
 
         # 2. Sikap Terhadap Kontrasepsi untuk remaja
-        # {
-        #     "nama": "pernyataan_1",
-        #     "tipe": "checkbox",
-        #     "opsi": [
-        #         {"label": "1", "box": (x, y, 30, 30)},
-        #         {"label": "2", "box": (x, y, 30, 30)},
-        #         {"label": "3", "box": (x, y, 30, 30)},
-        #         {"label": "4", "box": (x, y, 30, 30)},
-        #         {"label": "5", "box": (x, y, 30, 30)},
-        #     ]
-        # },
+        {
+            "nama": "pernyataan_1",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2722, 2762, 75, 175)},
+                {"label": "2", "box": (2819, 2765, 75, 175)},
+                {"label": "3", "box": (2914, 2764, 75, 175)},
+                {"label": "4", "box": (3002, 2762, 75, 175)},
+                {"label": "5", "box": (3098, 2760, 75, 175)},
+            ]
+        },
+        {
+            "nama": "pernyataan_2",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2727, 2940, 75, 175)},
+                {"label": "2", "box": (2824, 2941, 75, 175)},
+                {"label": "3", "box": (2919, 2937, 75, 175)},
+                {"label": "4", "box": (3006, 2940, 75, 175)},
+                {"label": "5", "box": (3104, 2930, 75, 175)},
+            ]
+        },
+        {
+            "nama": "pernyataan_3",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2730, 3104, 75, 175)},
+                {"label": "2", "box": (2825, 3105, 75, 175)},
+                {"label": "3", "box": (2919, 3107, 75, 175)},
+                {"label": "4", "box": (3008, 3103, 75, 175)},
+                {"label": "5", "box": (3104, 3103, 75, 175)},
+            ]
+        },
+        {
+            "nama": "pernyataan_4",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2732, 3278, 75, 175)},
+                {"label": "2", "box": (2828, 3282, 75, 175)},
+                {"label": "3", "box": (2921, 3278, 75, 175)},
+                {"label": "4", "box": (3007, 3268, 75, 175)},
+                {"label": "5", "box": (3106, 3275, 75, 175)},
+            ]
+        },
+
+        #beda ukuran box
+        {
+            "nama": "pernyataan_5",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2730, 3439, 75, 85)},
+                {"label": "2", "box": (2828, 3442, 75, 85)},
+                {"label": "3", "box": (2922, 3435, 75, 85)},
+                {"label": "4", "box": (3017, 3438, 75, 85)},
+                {"label": "5", "box": (3114, 3438, 75, 85)},
+            ]
+        },
+        {
+            "nama": "pernyataan_6",
+            "tipe": "checkbox",
+            "opsi": [
+                {"label": "1", "box": (2741, 3530, 75, 175)},
+                {"label": "2", "box": (2829, 3532, 75, 175)},
+                {"label": "3", "box": (2926, 3535, 75, 175)},
+                {"label": "4", "box": (3016, 3536, 75, 175)},
+                {"label": "5", "box": (3109, 3526, 75, 175)},
+            ]
+        },
 
     ],
     "settings": {
