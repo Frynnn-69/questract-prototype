@@ -1,280 +1,160 @@
 {
-    "fields": [
+  "fields": [
+    {
+      "nama": "GANTI_NAMA_FIELD_1",
+      "tipe": "checkbox",
+      "opsi": [
         {
-            "nama": "GANTI_NAMA_FIELD_1",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        948,
-                        561,
-                        21,
-                        38
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_2",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        1981,
-                        1020,
-                        33,
-                        35
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_3",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        1618,
-                        1120,
-                        34,
-                        32
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_2",
-                    "box": [
-                        2046,
-                        1123,
-                        32,
-                        35
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_3",
-                    "box": [
-                        2294,
-                        1129,
-                        34,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_4",
-                    "box": [
-                        2539,
-                        1133,
-                        34,
-                        33
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_4",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        1618,
-                        1312,
-                        34,
-                        34
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_5",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        1618,
-                        1415,
-                        34,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_2",
-                    "box": [
-                        1907,
-                        1418,
-                        34,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_3",
-                    "box": [
-                        2519,
-                        1427,
-                        34,
-                        33
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_4",
-                    "box": [
-                        2994,
-                        1435,
-                        34,
-                        34
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_6",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        4412,
-                        1465,
-                        32,
-                        32
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_7",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        2124,
-                        1521,
-                        34,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_2",
-                    "box": [
-                        2350,
-                        1524,
-                        34,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_3",
-                    "box": [
-                        2563,
-                        1527,
-                        35,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_4",
-                    "box": [
-                        2797,
-                        1530,
-                        34,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_5",
-                    "box": [
-                        3064,
-                        1535,
-                        33,
-                        34
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_8",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        2023,
-                        1621,
-                        33,
-                        34
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_9",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        1619,
-                        1721,
-                        34,
-                        32
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_2",
-                    "box": [
-                        2399,
-                        1729,
-                        35,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_3",
-                    "box": [
-                        2773,
-                        1735,
-                        33,
-                        32
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_4",
-                    "box": [
-                        3039,
-                        1738,
-                        33,
-                        34
-                    ]
-                }
-            ]
-        },
-        {
-            "nama": "GANTI_NAMA_FIELD_10",
-            "tipe": "checkbox",
-            "opsi": [
-                {
-                    "label": "GANTI_LABEL_1",
-                    "box": [
-                        1620,
-                        1821,
-                        33,
-                        34
-                    ]
-                },
-                {
-                    "label": "GANTI_LABEL_2",
-                    "box": [
-                        1843,
-                        1821,
-                        32,
-                        36
-                    ]
-                }
-            ]
+          "label": "GANTI_LABEL_1",
+          "box": [948, 561, 21, 38]
         }
-    ]
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_2",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [1981, 1020, 33, 35]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_3",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [1618, 1120, 34, 32]
+        },
+        {
+          "label": "GANTI_LABEL_2",
+          "box": [2046, 1123, 32, 35]
+        },
+        {
+          "label": "GANTI_LABEL_3",
+          "box": [2294, 1129, 34, 34]
+        },
+        {
+          "label": "GANTI_LABEL_4",
+          "box": [2539, 1133, 34, 33]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_4",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [1618, 1312, 34, 34]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_5",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [1618, 1415, 34, 34]
+        },
+        {
+          "label": "GANTI_LABEL_2",
+          "box": [1907, 1418, 34, 34]
+        },
+        {
+          "label": "GANTI_LABEL_3",
+          "box": [2519, 1427, 34, 33]
+        },
+        {
+          "label": "GANTI_LABEL_4",
+          "box": [2994, 1435, 34, 34]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_6",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [4412, 1465, 32, 32]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_7",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [2124, 1521, 34, 34]
+        },
+        {
+          "label": "GANTI_LABEL_2",
+          "box": [2350, 1524, 34, 34]
+        },
+        {
+          "label": "GANTI_LABEL_3",
+          "box": [2563, 1527, 35, 34]
+        },
+        {
+          "label": "GANTI_LABEL_4",
+          "box": [2797, 1530, 34, 34]
+        },
+        {
+          "label": "GANTI_LABEL_5",
+          "box": [3064, 1535, 33, 34]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_8",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [2023, 1621, 33, 34]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_9",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [1619, 1721, 34, 32]
+        },
+        {
+          "label": "GANTI_LABEL_2",
+          "box": [2399, 1729, 35, 34]
+        },
+        {
+          "label": "GANTI_LABEL_3",
+          "box": [2773, 1735, 33, 32]
+        },
+        {
+          "label": "GANTI_LABEL_4",
+          "box": [3039, 1738, 33, 34]
+        }
+      ]
+    },
+    {
+      "nama": "GANTI_NAMA_FIELD_10",
+      "tipe": "checkbox",
+      "opsi": [
+        {
+          "label": "GANTI_LABEL_1",
+          "box": [1620, 1821, 33, 34]
+        },
+        {
+          "label": "GANTI_LABEL_2",
+          "box": [1843, 1821, 32, 36]
+        }
+      ]
+    }
+  ]
 }
