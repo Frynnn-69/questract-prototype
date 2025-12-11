@@ -7,7 +7,7 @@
     <img src="https://0.academia-photos.com/13780162/10171376/11350231/s200_katherine.castillo_panduro.jpg" alt="Logo" width="357" height="162">
   </a>
   
-  <h3 align="center">Questract (Prototype)</h1>
+  <h3 align="center">Questract (Prototype)</h3>
 
   <p align="center">
     <strong>Optical Mark Recognition (OMR) Engine with Computer Vision</strong>
@@ -36,7 +36,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#technical-deep-dive">Technical Deep Dive</a></li>
+    <li><a href="#engineering-highlights">Engineering Highlights</a></li>
     <li><a href="#documentations">Documentations</a></li>
   </ol>
 </details>
@@ -72,7 +72,7 @@ While I researched advanced solutions like *DewarpNet (Single-Image Document Unw
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Technical Deep Dive
+## Engineering Highlights
 
 This repository demonstrates three key engineering concepts used to solve the OMR problem:
 
@@ -119,7 +119,6 @@ The raw pixel data is successfully converted into a clean, structured JSON forma
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
 [Python]: https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python
 [Python-url]: https://www.python.org
 [OpenCV]: https://img.shields.io/badge/OpenCV-000000?style=for-the-badge&logo=opencv
