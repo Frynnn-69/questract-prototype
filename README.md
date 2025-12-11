@@ -59,7 +59,9 @@ Watching the manual entry processâ€”moving data from paper to Excel one by oneâ€
   
 The prototype successfully processed flat-bed scans using a JSON coordinate blueprint. However, in real-world scenarios, mobile photography introduced **geometric distortions** (paper curling, perspective warping, and lighting shadows).
 
-While I researched advanced solutions like *DewarpNet (Single-Image Document Unwarping)* to flatten the images digitally, the research timeline was tight. The researcher eventually pivoted the data collection method, removing the need for this tool. I decided to archive the project here rather than leaving it unfinished, documenting the "Coordinate Blueprint" logic which remains a valid solution for flat-scan OMR.
+While I researched advanced solutions like <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Das_DewarpNet_Single-Image_Document_Unwarping_With_Stacked_3D_and_2D_Regression_ICCV_2019_paper.pdf">
+      *DewarpNet (Single-Image Document Unwarping)*
+    </a> to flatten the images digitally, the research timeline was tight. The researcher eventually pivoted the data collection method, removing the need for this tool. I decided to archive the project here rather than leaving it unfinished, documenting the "Coordinate Blueprint" logic which remains a valid solution for flat-scan OMR.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
