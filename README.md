@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 
+<!-- HEADER-->
 <br />
 <div align="center">
    <a href="#">
@@ -25,7 +26,7 @@
 
 <br />
 
-
+<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -36,10 +37,12 @@
       </ul>
     </li>
     <li><a href="#technical-deep-dive">Technical Deep Dive</a></li>
-    <li><a href="#-proof-of-concept">Proof of Concept</a></li>
+    <li><a href="#documentations">Documentations</a></li>
   </ol>
 </details>
 
+
+<!-- BODY -->
 ## Context & The Problem
 
 **Questract** was born from a real-world data entry bottleneck.
@@ -87,7 +90,7 @@ The engine doesn't just look for black pixels. It calculates the **pixel density
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 📸 Proof of Concept
+## Documentations
 
 Below is the visualization of the engine in action before the project was archived.
 
@@ -101,6 +104,7 @@ The raw pixel data is successfully converted into a clean, structured JSON forma
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FOOTER -->
 <br />
 <p align="center">
   <small>
