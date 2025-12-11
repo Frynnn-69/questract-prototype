@@ -3,8 +3,6 @@
    <a href="#">
     <img src="https://0.academia-photos.com/13780162/10171376/11350231/s200_katherine.castillo_panduro.jpg" alt="Logo" width="357" height="162">
   </a>
-
-  ---
   
   <h3 align="center">Questract (Prototype)</h1>
 
@@ -53,7 +51,7 @@ While I researched advanced solutions like *DewarpNet (Single-Image Document Unw
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Build With
+### Built With
 * [![Python][Python]][Python-url]
 * [![OpenCV][OpenCV]][OpenCV-url]
 * [![Streamlit][Streamlit]][Streamlit-url]
