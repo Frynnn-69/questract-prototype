@@ -47,6 +47,11 @@ A Psychology researcher was conducting a study on a sensitive topic (**contracep
 Watching the manual entry process—moving data from paper to Excel one by one—I realized this was a scalability problem. The hypothesis was simple: **Since the form layout is static (template-based), we should be able to map the coordinates once and automate the reading process.**
 
 ### The Technical Pivot (Why it stopped)
+
+<a href="#">
+   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGNtN3h6Z2N0Nm14eG5hcjNrZ29sZTZpaGt1d3NpOHd4dXR6cHY2MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LAKIIRqtM1dqE/giphy.gif" alt="Logo" width="357" height="162">
+</a>
+  
 The prototype successfully processed flat-bed scans using a JSON coordinate blueprint. However, in real-world scenarios, mobile photography introduced **geometric distortions** (paper curling, perspective warping, and lighting shadows).
 
 While I researched advanced solutions like *DewarpNet (Single-Image Document Unwarping)* to flatten the images digitally, the research timeline was tight. The researcher eventually pivoted the data collection method, removing the need for this tool. I decided to archive the project here rather than leaving it unfinished, documenting the "Coordinate Blueprint" logic which remains a valid solution for flat-scan OMR.
