@@ -13,13 +13,16 @@
   </p>
 </div>
 
+<br />
+
 > [!WARNING]
 > **PROJECT ARCHIVED**
 > <br />
 > This project was developed in **September 2025** and is now **Read-Only**.
 > It was built to solve a specific research bottleneck but was eventually halted due to a pivot in the research methodology. The code remains available as a case study in **Coordinate Mapping** and **Computer Vision** algorithms.
 
----
+<br />
+
 
 <details>
   <summary>Table of Contents</summary>
@@ -95,7 +98,7 @@ The raw pixel data is successfully converted into a clean, structured JSON forma
 <p align="center">
   <small>
     Developed by 
-    <a href="https://www.linkedin.com/in/USERNAME-KAMU">
+    <a href="https://www.linkedin.com/in/firyan-fatih-fadilah">
       Firyan Fatih Fadilah
     </a>
     as a Mini-Research Project.
