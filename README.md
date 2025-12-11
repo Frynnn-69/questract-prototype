@@ -98,7 +98,7 @@ Below is the visualization of the engine in action before the project was archiv
 
 **1. Input Processing & Visual Debugging**
 The system visualizes the "Robot's Eye View"—drawing bounding boxes (Green/Red) over the original image to verify detection accuracy in real-time.
-![Visual Debugging](test_images/template_kuesioner_2.jpg)
+![Visual Debugging](test_images/template_kuesioner-2.jpg)
 
 **2. Final Output (Digitization)**
 The raw pixel data is successfully converted into a clean, structured JSON format ready for database entry.
