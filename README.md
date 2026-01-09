@@ -87,7 +87,7 @@ This repository demonstrates three key engineering concepts used to solve the OM
 
 **1. JSON-Based Coordinate Blueprint**
 
-Instead of hardcoding pixel values, the system relies on a **Config-Driven Architecture**. The layout of the questionnaire is defined in a separate JSON file (`generated_config.json`). This makes the engine agnostic; it doesn't care _what_ the form asks, it only cares _where_ the boxes are.
+Instead of hardcoding pixel values, the system relies on a **Config-Driven Architecture**. The layout of the questionnaire is defined in `config.py` as a JSON-like structure. A helper tool (`generate_config.py`) can auto-generate this from a blank template. This makes the engine agnostic; it doesn't care _what_ the form asks, it only cares _where_ the boxes are.
 
 **2. Automated Coordinate Discovery**
 
