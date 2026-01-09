@@ -18,7 +18,9 @@
 
 <br />
 
-> [!WARNING] > **PROJECT ARCHIVED** > <br />
+> [!WARNING]
+> **PROJECT ARCHIVED**
+> <br />
 > This project was developed in **September 2025** and is now **Read-Only**.
 > It was built to solve a specific research bottleneck but was eventually halted due to a pivot in the research methodology. The code remains available as a case study in **Coordinate Mapping** and **Computer Vision** algorithms.
 
