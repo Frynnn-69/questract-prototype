@@ -16,7 +16,6 @@ def mouse_event_handler(event, x, y, flags, params):
     if event == cv2.EVENT_LBUTTONDOWN:
         if start_point is None:
             start_point = (x, y)
-            # print(f"Titik awal ditandai di (x, y): {start_point}")
         else:
             end_point = (x, y)
 
@@ -28,8 +27,8 @@ def mouse_event_handler(event, x, y, flags, params):
             start_point = None
 
             print("-" * 30)
-            print(f"Kotak #{len(defined_boxes)} berhasil dibuat!")
-            print(f'   Hasil kalkulasi "box {len(defined_boxes)}": {box[:2]}') # {box[:4]} x, y, lebar, tinggi
+            print(f"Box #{len(defined_boxes)} created")
+            print(f'   Coordinates: {box[:2]}')  # (x, y, width, height)
             print("-" * 30)
 
 if len(sys.argv) > 1:
@@ -60,7 +59,7 @@ while True:
         if start_point:
             cv2.circle(display_buffer, start_point, 7, (0, 255, 0), -1)
 
-        # Crosshair
+        # Draw crosshair at cursor position for precision
         if current_mouse_pos:
             h, w, _ = display_buffer.shape
             cv2.line(display_buffer, (0, current_mouse_pos[1]), (w, current_mouse_pos[1]), (255, 255, 0), 1)

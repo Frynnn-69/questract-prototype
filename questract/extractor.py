@@ -4,8 +4,8 @@ import sys
 
 def _analyze_checkbox(image_roi, min_contour_area):
     """
-    Fungsi internal untuk menganalisis checkbox menggunakan
-    Deteksi Kontur DENGAN FILTER DERAU.
+    Analyze checkbox region using contour detection with noise filtering.
+    Returns total area of significant contours (filters out scanner dust/artifacts).
     """
     if image_roi is None or image_roi.size == 0:
         return 0
@@ -17,6 +17,7 @@ def _analyze_checkbox(image_roi, min_contour_area):
     if not contours:
         return 0
 
+    # Filter out noise based on minimum area threshold
     filtered_contours = [c for c in contours if cv2.contourArea(c) > min_contour_area]
 
     if not filtered_contours:
@@ -28,7 +29,14 @@ def _analyze_checkbox(image_roi, min_contour_area):
 
 def process_image(image, blueprint):
     """
-    Fungsi utama untuk memproses seluruh gambar berdasarkan blueprint.
+    Process questionnaire image based on coordinate blueprint.
+    
+    Args:
+        image: OpenCV image array (BGR format)
+        blueprint: Dictionary containing field definitions and settings
+    
+    Returns:
+        Dictionary with field results and debug scores for each option
     """
     results = {}
     settings = blueprint["settings"]

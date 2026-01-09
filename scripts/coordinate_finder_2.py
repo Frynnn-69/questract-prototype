@@ -15,7 +15,7 @@ def mouse_event_handler(event, x, y, flags, params):
 
     if event == cv2.EVENT_LBUTTONDOWN:
         click_points.append((x, y))
-        print(f"Titik #{len(click_points)} ditandai di: {(x, y)}")
+        print(f"Point #{len(click_points)} marked at: {(x, y)}")
 
         if len(click_points) == 2:
             x1, y1 = click_points[0]
@@ -26,7 +26,7 @@ def mouse_event_handler(event, x, y, flags, params):
             click_points.clear()
 
             print("-" * 30)
-            print(f"Kotak #{len(defined_boxes)} berhasil dibuat!")
+            print(f"Box #{len(defined_boxes)} created")
             print(f'   "box": {box[:2]}')
             print("-" * 30)
 

@@ -3,23 +3,19 @@ from boxdetect import pipelines, config
 import numpy as np
 import json
 
-# --- KONFIGURASI ---
+# Configuration
 IMAGE_PATH = 'test_images/template_kuesioner_base.png'
-# Nama file output untuk blueprint yang dihasilkan
 OUTPUT_JSON_PATH = 'generated_config.json'
-# Toleransi (dalam piksel) untuk menganggap dua kotak berada di baris yang sama
-Y_TOLERANCE = 15
+Y_TOLERANCE = 15  # Pixels tolerance for grouping boxes into rows
 
-print("Memulai proses pembangkitan blueprint cerdas...")
+print("Starting smart blueprint generation...")
 
-# Muat gambar
 img = cv2.imread(IMAGE_PATH, cv2.IMREAD_COLOR)
 
 if img is None:
-    print(f"Error: Tidak bisa membuka gambar di '{IMAGE_PATH}'")
+    print(f"Error: Cannot open image at '{IMAGE_PATH}'")
 else:
-    # 1. [PERBAIKAN KUNCI] Menggunakan metode deteksi yang akurat dan teruji
-    #    dari skrip 'automated_finder.py' sebelumnya.
+    # 1. Detect checkboxes using proven method from automated_finder.py
     cfg = config.PipelinesConfig()
     cfg.width_range = (20, 50)
     cfg.height_range = (20, 50)
@@ -29,14 +25,14 @@ else:
 
     checkboxes_raw = pipelines.get_checkboxes(img, cfg=cfg, plot=False)
 
-    # 2. Ekstrak hanya koordinat (x, y, w, h) dan saring derau
+    # 2. Extract coordinates and filter noise
     boxes = [item[0] for item in checkboxes_raw if item[0][2] > 15 and item[0][3] > 15]
-    print(f"Ditemukan dan disaring {len(boxes)} kotak yang valid.")
+    print(f"Detected and filtered {len(boxes)} valid boxes.")
 
-    # 3. Urutkan kotak dari atas ke bawah
+    # 3. Sort boxes top to bottom
     boxes.sort(key=lambda box: box[1])
 
-    # 4. Kelompokkan kotak ke dalam baris menggunakan Spatial Clustering
+    # 4. Group boxes into rows using spatial clustering
     rows = []
     if boxes:
         current_row = [boxes[0]]
@@ -52,11 +48,11 @@ else:
             last_y = current_y
         rows.append(current_row)
 
-    # 5. Urutkan kotak di dalam setiap baris dari kiri ke kanan
+    # 5. Sort boxes within each row from left to right
     for row in rows:
         row.sort(key=lambda box: box[0])
 
-    # 6. Hasilkan struktur data Python yang rapi
+    # 6. Generate structured blueprint
     generated_fields = []
     for i, row in enumerate(rows):
         options = []
@@ -72,17 +68,16 @@ else:
 
     final_blueprint = {"fields": generated_fields}
 
-    # 7. Simpan ke file JSON
+    # 7. Save to JSON file
     with open(OUTPUT_JSON_PATH, 'w') as f:
         json.dump(final_blueprint, f, indent=4)
 
-    print("\n--- PROSES SELESAI ---")
-    print(f"✅ Blueprint JSON yang terstruktur telah berhasil dibuat!")
-    print(f"   Silakan buka file: '{OUTPUT_JSON_PATH}'")
+    print("\n--- PROCESS COMPLETE ---")
+    print(f"✓ Structured blueprint successfully generated!")
+    print(f"  Open file: '{OUTPUT_JSON_PATH}'")
     print("-" * 50)
 
-
-    # (Opsional) Visualisasi
+    # Optional: Visualization
     out_img = img.copy()
     for i, row in enumerate(rows):
         color = tuple(np.random.randint(0, 255, 3).tolist())
@@ -91,7 +86,7 @@ else:
             cv2.rectangle(out_img, (x, y), (x + w, y + h), color, 2)
             cv2.putText(out_img, f"R{i}", (x - 40, y + h), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
 
-    cv2.imshow("Hasil Pengelompokan Spasial - Tekan 'q' untuk keluar", out_img)
+    cv2.imshow("Spatial Grouping Results - Press 'q' to exit", out_img)
     while True:
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
