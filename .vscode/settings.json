@@ -1,0 +1,31 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/*.pyo": true,
+    "**/*.pyd": true,
+    "**/venv": true,
+    "**/.venv": true,
+    "**/.ropeproject": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/*.egg-info": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/venv": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.ropeproject": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true
+  }
+}
